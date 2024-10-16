@@ -1,3 +1,4 @@
+import random
 # print("Hello World!")
 
 # # Basic data types
@@ -53,45 +54,79 @@
         
 # Functions -------------------------------------------------------
 
-def greet(name):
-    return f'hello, {name}!'
+# def greet(name):
+#     return f'hello, {name}!'
 
-print(greet("Shabbeer"))
+# print(greet("Shabbeer"))
 
-# Modules ------------------------------------------------------
+# # Modules ------------------------------------------------------
 
-#  creating and importing and modules
-import math_module
+# #  creating and importing and modules
+# import math_module
  
-add_result = math_module.add(5,3)
-subtract_result = math_module.subtract(5,3)
-multiply_result = math_module.multiply(5,3)
-divide_result = math_module.divide(5,3)
+# add_result = math_module.add(5,3)
+# subtract_result = math_module.subtract(5,3)
+# multiply_result = math_module.multiply(5,3)
+# divide_result = math_module.divide(5,3)
 
-print(add_result,subtract_result,multiply_result,divide_result)
+# print(add_result,subtract_result,multiply_result,divide_result)
 
-# Existing module
+# # Existing module
 
-import math
-#print(math.sqrt(16))
+# import math
+# #print(math.sqrt(16))
 
-# Data Structure Manipulation -----------------------------------------
+# # Data Structure Manipulation -----------------------------------------
 
-# list manipulation
-fruits = ['apple','banana','cherry']
-fruits.append('orange')
+# # list manipulation
+# fruits = ['apple','banana','cherry']
+# fruits.append('orange')
 
-# tuple cannot be changed but can be displayed
-coordinates = (10.0,20.0)
-x,y = coordinates
+# # tuple cannot be changed but can be displayed
+# coordinates = (10.0,20.0)
+# x,y = coordinates
 
-# dictionary manipulation
+# # dictionary manipulation
 
-person = {'name': "Shabbeer",
-          'age': 25}
-person['age'] = 30
+# person = {'name': "Shabbeer",
+#           'age': 25}
+# person['age'] = 30
 
-# sets manipulation
-unique_numbers ={1,2,3,4}
-unique_numbers.add(5)
+# # sets manipulation
+# unique_numbers ={1,2,3,4}
+# unique_numbers.add(5)
+
+# # importing libraries ------------------------------------------
+
+# # numpy
+# import numpy as np
+
+# a= np.array([1,2,3])
+# b = np.array([4,5,6])
+# c = a + b 
+# print(c) # Vectorized addition
+
+
+# # pandas
+
+# import pandas as pd
+
+# data = {'Name': ['Alice','Bob','Charlie'],
+#         'Age': [25,30,35]}
+# df = pd.DataFrame(data)
+# print(df)
+
+
+# for number in range(2, 21, 2):
+#     print(number)
+
+# number = 0
+# while number <= 20:
+#     print(number)
+#     number += 2
+
+# for number in range(1, 10):
+#     if number == 5:
+#         break
+#     print(number)
 
