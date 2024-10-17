@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset into a pandas DataFrame
-file_path = './ITNETUSERP2ZAF.csv'
+file_path = './INTERNETUSERS.csv'
 df = pd.read_csv(file_path)
 
 # Data Cleaning
@@ -23,9 +23,9 @@ def basic_info(df):
 
 # Visualizing Data Distributions
 def visualize_distributions(df):
-    # Histogram of ITNETUSERP2ZAF column
+    # Histogram of INTERNETUSERS column
     plt.figure(figsize=(8,6))
-    sns.histplot(df['ITNETUSERP2ZAF'], bins=10, kde=True)
+    sns.histplot(df['INTERNETUSERS'], bins=10, kde=True)
     plt.title('Distribution of Internet Users (%) in South Africa')
     plt.xlabel('Internet Users (%)')
     plt.ylabel('Frequency')
@@ -33,7 +33,7 @@ def visualize_distributions(df):
 
     # Time Series Plot
     plt.figure(figsize=(10,6))
-    sns.lineplot(x='DATE', y='ITNETUSERP2ZAF', data=df, marker="o")
+    sns.lineplot(x='DATE', y='INTERNETUSERS', data=df, marker="o")
     plt.title('Internet Users (%) Over Time in South Africa')
     plt.xlabel('Year')
     plt.ylabel('Internet Users (%)')

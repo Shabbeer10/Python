@@ -1,8 +1,19 @@
 {
     "docwriter.style": "Auto-detect",
     "cSpell.words": [
+        "annot",
         "arange",
-        "dtype"
+        "cmap",
+        "coolwarm",
+        "dtype",
+        "figsize",
+        "histplot",
+        "INTERNETUSERS",
+        "ITNETUSERP",
+        "lineplot",
+        "xlabel",
+        "xticks",
+        "ylabel"
     ],
     "wolf.disableHotModeWarning": true
 }
