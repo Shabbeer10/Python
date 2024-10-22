@@ -2,11 +2,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load the dataset into a pandas DataFrame
+# Load the dataset into DataFrame ----------------------
 file_path = './INTERNETUSERS.csv'
-df = pd.read_csv(file_path)
+try:
+    df = pd.read_csv(file_path)
+except FileNotFoundError:
+    print(f"Error: The file {file_path} was not found.")
+except pd.errors.EmptyDataError:
+    print("Error: The file is empty.")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
 
-# Data Cleaning
+
+# Data Cleaning ---------------------------------------
 # Convert 'DATE' to datetime format
 df['DATE'] = pd.to_datetime(df['DATE'], errors='coerce')
 
@@ -21,7 +29,7 @@ def basic_info(df):
     print("\nSample Data:\n", df.head())
     print("\nSummary Statistics:\n", df.describe())
 
-# Visualizing Data Distributions
+# Visualizing Data ----------------------------------------------
 def visualize_distributions(df):
     # Histogram of INTERNETUSERS column
     plt.figure(figsize=(8,6))
@@ -45,12 +53,6 @@ def visualize_distributions(df):
 def explore_data(df):
     print("\nDescriptive Statistics:\n", df.describe())
     print("\nChecking for Missing Data:\n", df.isnull().sum())
-
-    # Correlation matrix (since we have only one numeric column, this is just illustrative)
-    plt.figure(figsize=(6,4))
-    sns.heatmap(df.corr(), annot=True, cmap='coolwarm', fmt='.2f')
-    plt.title('Correlation Matrix')
-    plt.show()
 
 # Main execution flow
 if __name__ == "__main__":
