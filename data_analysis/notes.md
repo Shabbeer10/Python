@@ -10,9 +10,9 @@ Data Loading and Cleaning
 
 Next, we loaded the data using pandas, a powerful library for data manipulation in Python. To ensure the data is clean and usable, we performed several key steps:
 
-Converted the 'DATE' column to a datetime format.
-Removed duplicate entries to maintain data integrity.
-Additionally, I implemented error handling to manage any issues that might arise during data loading.
+-Converted the 'DATE' column to a datetime format.
+-Removed duplicate entries to maintain data integrity.
+-Additionally, I implemented error handling to manage any issues that   might arise during data loading.
 
 Basic Information
 
@@ -37,7 +37,6 @@ The explore_data(df) function further deepens our analysis:
 
 It provides descriptive statistics, giving insights into central tendencies and variability.
 We check for missing data to identify any potential gaps.
-Finally, we generate a correlation matrix. While our dataset has only one numeric column, this step can be useful when analyzing more complex datasets in the future.
 
 Key Findings
 
