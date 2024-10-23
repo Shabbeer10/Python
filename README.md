@@ -27,7 +27,6 @@ Here’s a list of topics I’ve learned and am currently practicing:
 - **Functions**: Writing and calling functions, parameters, and return values
 - **Data Structures**: Lists, dictionaries, tuples, and sets
 - **Modules and Libraries**: How to import and use external libraries
-- **Basic File Handling**: Reading from and writing to files
 
 As I progress, I’ll update this list with new topics I learn.
 
