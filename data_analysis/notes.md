@@ -40,8 +40,7 @@ We check for missing data to identify any potential gaps.
 
 Key Findings
 
-From our analysis, several key findings emerged:
+From my analysis, several key findings emerged:
 
-In the time series plot, we observed noticeable trends, including periods of rapid growth or stagnation in internet usage.
+In the time series plot, we observed noticeable trends, including periods of stagnation in the beginning and then rapid growth near the middle in internet usage.
 The histogram shows how the distribution of internet users varies, which can inform strategies for improving access and usage.
-The missing data analysis highlighted areas that may require further attention in future analyses.
