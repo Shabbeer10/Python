@@ -51,7 +51,6 @@ def visualize_distributions(df):
 
 # Exploratory Data Analysis (EDA)
 def explore_data(df):
-    print("\nDescriptive Statistics:\n", df.describe())
     print("\nChecking for Missing Data:\n", df.isnull().sum())
 
 # Main execution flow

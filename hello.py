@@ -32,11 +32,26 @@ y = False
 # print(x or y)
 # print(not x)
 
-temperature = 30
+# temperature = 17
 
-if temperature > 25:
-    print("It's a hot day.")
-elif temperature > 15:
-    print("It's a pleasant day.")
-else:
-    print("It's cold.")
+# if temperature > 25:
+#     print("It's a hot day.")
+# elif temperature > 15:
+#     print("It's a pleasant day.")
+# else:
+#     print("It's cold.")
+
+# for i in range(5):
+#     if i > 0 and temperature == 15 :
+#         print(f"{i} million, {i}00 billion")
+#     else:
+#         print('no money')
+
+def greet(name):
+    '''
+    Function to greet a person with their name.
+    '''
+    return f"Hello, {name}!"
+
+message = greet("Omphile")
+print(message)
